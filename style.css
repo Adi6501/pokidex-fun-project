@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 375px;
+    height: 520px;
+    background-color: red;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 4px 4px 30px;
+    position: relative;
+    z-index: 3;
+}
+.slider{
+    width: 375px;
+    height: 520px;
+    background-color: red;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+#arrow i{
+    font-size: 80px;
+    color: yellow;
+    box-shadow: 4px 4px 20px;
+    border: 2px solid;
+}
+.container:hover .slider {
+    transform: translateX(100%);
+}
+.lens
+{
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+    margin: 30px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px;
+}
+.grid{
+    width: 100%;
+    height: 110px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px;
+}
+.semilens1{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    margin: 40px;
+    margin-top: -110px;
+    margin-left: 170px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px;
+    border: 1px solid;
+}
+.semilens2{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    margin: 40px;
+    margin-top: -60px;
+    margin-left: 140px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px;
+    border: 1px solid;
+}
+.semilens3{
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    margin: 40px;
+    margin-top: -60px;
+    margin-left: 110px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px;
+    border: 1px solid;
+}
+.whiteframe{
+    width: 70%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 4px 4px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blackframe{
+    width: 230px;
+    height: 170px;
+    background-color: black;
+    /* margin: 40px; */
+    border: 1px solid;
+    border-radius: 10px;
+}
+.plus1{
+    height: 80px;
+    width: 30px;
+    background-color: black;
+    margin: 20px;
+    margin-left: 280px;
+    box-shadow: 3px 3PX 20px;
+    z-index: 3;
+}
+.plus2{
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    position: fixed;
+    margin-top: -73px;
+    margin-left: 255px;
+    box-shadow: 3px 3PX 20px;
+    z-index: 3;
+}
+/* Existing CSS rules here */
+
+.blackframe {
+    width: 230px;
+    height: 170px;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search {
+    width: calc(100% - 20px);
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#pokemon-list {
+    color: white;
+    font-size: 14px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+#pokemon-list div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer; /* Add a pointer cursor for clickable items */
+}
+
+#pokemon-list img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#pokemon-list div.clicked img {
+    transform: scale(1.5); /* Enlarge image on click */
+    transition: transform 0.3s ease;
+}
+
+#pokemon-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: none; /* Initially hidden */
+}
+
+#pokemon-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
